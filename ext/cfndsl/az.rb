@@ -109,8 +109,8 @@ def az_create_subnets(subnet_allocation, subnet_name, type = 'private', vpc = 'V
       Condition "Az#{az}"
       Type 'AWS::EC2::Subnet'
       Property('VpcId', Ref(vpc.to_s))
-      Property('CidrBlock', Ref("Subnet#{subnet_name}#{az}cidr"))
-      Property('AvailabilityZone', Ref("Az#{az}"))
+      Property('CidrBlock', 'Subnet#{subnet_name}#{az}cidr' )
+      Property('AvailabilityZone', 'Az#{az}')
       Property('Tags', [{ Key: 'Name', Value: "#{subnet_name}#{az}" }])
     end
 

@@ -52,15 +52,15 @@ CfhighlanderTemplate do
       attribute 'DnsDomain'
     end
 
-    MappingParam 'MaxNatGateways', maximum_availability_zones do
-      map 'EnvironmentType'
-      attribute 'MaxNatGateways'
-    end
+    #MappingParam 'MaxNatGateways', maximum_availability_zones do
+    #  map 'EnvironmentType'
+    #  attribute 'MaxNatGateways'
+    #end
 
-    MappingParam 'SingleNatGateway', 'true' do
-      map 'EnvironmentType'
-      attribute 'SingleNatGateway'
-    end
+    #MappingParam 'SingleNatGateway', 'true' do
+    #  map 'EnvironmentType'
+    #  attribute 'SingleNatGateway'
+    #end
 
   end
 

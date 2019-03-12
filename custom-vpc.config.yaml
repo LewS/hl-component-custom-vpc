@@ -15,7 +15,7 @@ subnets:
     name: Public
     type: public
 enable_transit_vpc: false
-
+MaxNatGateways: 1
 # Manage the NS Records for the VPCs public hosted zone
 # when `true` enables the propergation of NS record into either a parent
 # zone in the same account of via a custom resource another AWS account
